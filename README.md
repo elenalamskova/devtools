@@ -16,3 +16,12 @@ Gradle-проект ProgressDemo
 | sprintNumber        | int            | номер спринта |
 | plannedHoursPerWeek | int            | время спринта |
 - ссылка на урок https://mentee-power.xl.ru/learn/MCIneBj4KkyH-GIRCspFvA/theory
+- Git-локальный цикл
+    git init
+    создание шаблонов (templates)+.gitignore+README.md
+    git add (имя файла или несколько через пробел)
+    git commit -m "message"
+    git status
+    git push -u origin (название ветки нововведения)
+
+- Правило веток: feature/DVT‑X - называем ветки по номеру урока; шаблон записи в названии

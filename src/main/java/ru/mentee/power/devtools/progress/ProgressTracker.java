@@ -2,7 +2,7 @@ package ru.mentee.power.devtools.progress;
 
 public class ProgressTracker {
     public String calculateTotalProgress(Mentee[] mentees) {
-        if (mentees == null && mentees.length == 0) {
+        if (mentees == null || mentees.length == 0) {
             throw new IllegalArgumentException("Array mentees is null or empty");
         }
         int index = 0;
@@ -15,7 +15,7 @@ public class ProgressTracker {
             index++;
         }
         int totalRemaining = totalTotal - totalCompleted;
-        return "Суммарно: пройдено " + totalCompleted + " из " + totalTotal + " уроков, осталось " + totalRemaining + " уроков";
+        return "пройдено " + totalCompleted + " из " + totalTotal + " уроков, осталось " + totalRemaining + " уроков";
     }
 
     public static void main(String[] args) {

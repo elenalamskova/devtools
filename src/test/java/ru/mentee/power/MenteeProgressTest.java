@@ -4,7 +4,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 class MenteeProgressTest {
     @Test
-    void shouldFormatSummary_whenProgressCreated() {
+    void shouldFormatSummaryWhenProgressCreated() {
         MenteeProgress progress = new MenteeProgress("Ирина", 1, 8);
 
         String result = progress.summary();
@@ -13,16 +13,21 @@ class MenteeProgressTest {
     }
 
     @Test
-    void shouldDetectReadiness_whenHoursAboveThreshold() {
+    void shouldDetectReadinessWhenHoursAboveThreshold() {
         MenteeProgress progress = new MenteeProgress("Ирина", 1, 4);
 
         assertThat(progress.readyForSprint()).isTrue();
     }
 
     @Test
-    void shouldDetectLackOfReadiness_whenHoursBelowThreshold() {
+    void shouldDetectLackOfReadinessWhenHoursBelowThreshold() {
         MenteeProgress progress = new MenteeProgress("Ирина", 1, 2);
 
         assertThat(progress.readyForSprint()).isFalse();
+    }
+    @Test
+    void mainShouldRunWithoutExceptions() {
+        String[] args = {};
+        ProgressDemo.main(args);
     }
 }

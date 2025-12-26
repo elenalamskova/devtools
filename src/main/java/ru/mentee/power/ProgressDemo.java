@@ -10,7 +10,7 @@ public class ProgressDemo {
         var progress = elenaLamskova;
 
         System.out.println(progress.summary());
-        if (progress.readyForSprint()) {
+        if(progress.readyForSprint()) { //намеренная ошибка (пункт 6 задания DVT-8)
             System.out.println("Status: sprint ready");
         } else {
             System.out.println("Status: backlog first");

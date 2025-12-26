@@ -2,12 +2,12 @@ package ru.mentee.power;
 
 public class ProgressDemo {
     public static void main(String[] args) {
-        MenteeProgress elena_Lamskova = new MenteeProgress(//нейминг
+        MenteeProgress elenaLamskova = new MenteeProgress(
                 "ElenaLamskova",
                 2,
                 40
         );
-        var progress = elena_Lamskova;
+        var progress = elenaLamskova;
 
         System.out.println(progress.summary());
         if (progress.readyForSprint()) {

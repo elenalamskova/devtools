@@ -2,15 +2,15 @@ package ru.mentee.power;
 
 public class ProgressDemo {
     public static void main(String[] args) {
-        MenteeProgress elenaLamskova = new MenteeProgress(
+        MenteeProgress elena_Lamskova = new MenteeProgress(//нейминг
                 "ElenaLamskova",
                 2,
                 40
         );
-        var progress = elenaLamskova;
+        var progress = elena_Lamskova;
 
         System.out.println(progress.summary());
-        if(progress.readyForSprint()) { //намеренная ошибка (пункт 6 задания DVT-8)
+        if (progress.readyForSprint()) {
             System.out.println("Status: sprint ready");
         } else {
             System.out.println("Status: backlog first");
@@ -18,5 +18,3 @@ public class ProgressDemo {
         System.out.println("This is the feature/DVT-3 branch");
     }
 }
-
-

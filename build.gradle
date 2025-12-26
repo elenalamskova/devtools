@@ -12,7 +12,7 @@ jacoco {
 checkstyle {
     toolVersion = '10.12.4'
     maxErrors = 0
-    maxWarnings = 999
+    maxWarnings = 0
     configFile = rootProject.file('config/checkstyle/checkstyle.xml')
     configProperties = ['checkstyle.enableExternalDtdLoad': 'true']
 }

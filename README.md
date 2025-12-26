@@ -96,3 +96,40 @@ Gradle-проект ProgressDemo
 
 Почему: скобки обязательны даже для однострочных блоков.
 Источник: https://google.github.io/styleguide/javaguide.html#s4.1.1-braces-always-used
+
+# CI-пайплайн настроен"
+new workflow file создан по образцу:
+
+name: <Ваше_название>
+
+on:
+push:
+branches:
+- <ветка_1>
+- '<паттерн_feature>'
+pull_request:
+branches:
+- <ветка_master>
+
+jobs:
+<имя_job>:
+runs-on: <операционная_система>
+
+       steps:
+         - name: <Описание_шага_1>
+           uses: actions/checkout@v4
+
+         - name: <Описание_шага_2>
+           uses: actions/setup-java@v4
+           with:
+             distribution: '<дистрибутив>'
+             java-version: '<версия>'
+
+         - name: <Описание_шага_3>
+           run: <команда_checkstyle>
+
+         - name: <Описание_шага_4>
+           run: <команда_тесты>
+
+         - name: <Описание_шага_5>
+           run: <команда_сборка>

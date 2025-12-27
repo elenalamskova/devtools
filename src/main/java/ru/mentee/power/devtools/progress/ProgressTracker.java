@@ -15,7 +15,7 @@ public class ProgressTracker {
             index++;
         }
         int totalRemaining = totalTotal - totalCompleted;
-        return "пройдено " + totalCompleted + " из " + totalTotal + " уроков осталось " + totalRemaining;
+        return "пройдено " + totalCompleted + " из " + totalTotal + " уроков осталось " + totalRemaining + "уроков";
     }
 
     public static void main(String[] args) {

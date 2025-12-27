@@ -18,5 +18,3 @@ public class ProgressDemo {
         System.out.println("This is the feature/DVT-3 branch");
     }
 }
-
-

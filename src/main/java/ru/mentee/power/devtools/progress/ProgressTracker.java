@@ -15,8 +15,8 @@ public class ProgressTracker {
             index++;
         }
         int totalRemaining = totalTotal - totalCompleted;
-        return "Суммарно: пройдено " + totalCompleted + " из " + totalTotal + " уроков, осталось " + totalRemaining + " уроков";
-    } //слишком длинная строка вывода (нужно убрать "Суммарно: ")
+        return "пройдено " + totalCompleted + " из " + totalTotal + " уроков, осталось " + totalRemaining + " уроков";
+    }
 
     public static void main(String[] args) {
         ProgressTracker tracker = new ProgressTracker();

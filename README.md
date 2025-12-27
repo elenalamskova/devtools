@@ -1,4 +1,5 @@
 Gradle-проект ProgressDemo
+[![Java CI with Checkstyle and JaCoCo](https://github.com/elenalamskova/devtools/actions/workflows/ci.yml/badge.svg)](https://github.com/elenalamskova/devtools/actions/workflows/ci.yml)
 - Quick Start:
   JDK25; Gradle 9.2.0
   ./gradlew run (запустить приложение)
